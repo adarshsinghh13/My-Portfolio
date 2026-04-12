@@ -6,7 +6,7 @@ const MessageSchema = new mongoose.Schema(
     image: String,
     message: String,
   },
-  { timestamps: true } // ✅ THIS IS REQUIRED
+  { timestamps: true }
 );
 
 export default mongoose.models.Message ||

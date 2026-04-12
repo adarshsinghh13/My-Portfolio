@@ -3,6 +3,7 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { FaSpotify } from "react-icons/fa";
 
 
 export default function BehindSection() {
@@ -18,7 +19,7 @@ export default function BehindSection() {
 
         <h2 className="text-[42px] md:text-[64px] font-semibold leading-tight">
           Decoding logic <br />
-          <span className="font-serif italic bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+          <span className="font-serif italic bg-gradient-to-r from-gray-600 via-gray-400 to-gray-700 text-transparent bg-clip-text">
             && the lyrics
           </span>
         </h2>
@@ -87,7 +88,7 @@ export default function BehindSection() {
 
             <h3 className="text-3xl font-semibold leading-tight">
               Leave your{" "}
-              <span className="font-serif italic bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 text-transparent bg-clip-text">
+              <span className="font-serif italic bg-gradient-to-r from-gray-600 via-gray-400 to-gray-700 text-transparent bg-clip-text">
                 signature
               </span>
             </h3>
@@ -101,9 +102,9 @@ export default function BehindSection() {
 
             {/* avatars */}
             <div className="flex -space-x-3">
-              <img src="/img1.jpg" className="w-8 h-8 rounded-full border border-black" />
-              <img src="/img2.jpg" className="w-8 h-8 rounded-full border border-black" />
-              <img src="/img3.jpg" className="w-8 h-8 rounded-full border border-black" />
+              <img src="/guestbook1.jpg" className="w-8 h-8 rounded-full border border-black" />
+              <img src="/guestbook2.jpg" className="w-8 h-8 rounded-full border border-black" />
+              <img src="/guestbook3.jpg" className="w-8 h-8 rounded-full border border-black" />
             </div>
 
             {/* BUTTON */}
@@ -121,32 +122,51 @@ export default function BehindSection() {
 
         {/* 🔥 RIGHT CARD (SPOTIFY CLICKABLE) */}
         <a
-          href="https://open.spotify.com/track/3n3Ppam7vgaVa1iaRUc9Lp"
+          href="https://open.spotify.com/track/3hEfpBHxgieRLz4t3kLNEg"
           target="_blank"
           className="relative rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition group"
         >
 
           {/* background image */}
           <img
-            src="/img1.jpg"
+            src="/aboutyou.jpg"
             className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition"
           />
 
-          <div className="relative p-6 backdrop-blur-md">
+          <div className="relative p-6 backdrop-md">
 
-            <p className="text-sm text-white/60 mb-2">
-              Last Played
-            </p>
+            <div className="flex items-center gap-2 text-sm text-white/60 mb-2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 496 512"
+    className="w-4 h-4 fill-green-500"
+  >
+    <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 
+    248-248S385 8 248 8zm100.8 365.6c-4 6.6-12.6 8.6-19.2 
+    4.6-52.8-32.2-119.4-39.5-198-21.7-7.6 1.7-15.2-3-16.9-10.6-1.7-7.6 
+    3-15.2 10.6-16.9 85.4-19.3 158.4-11.2 219.5 
+    25.9 6.6 4 8.6 12.6 4 18.7zm27.4-61.1c-5 8.2-15.8 
+    10.8-24 5.8-60.4-37.1-152.4-47.9-223.8-26.2-9.2 
+    2.8-18.9-2.4-21.7-11.6-2.8-9.2 2.4-18.9 
+    11.6-21.7 80.7-24.5 181-12.6 254.7 
+    32.3 8.2 5 10.8 15.8 5.8 21.4zm2.4-63.5c-72.3-43-191.6-47-260.6-26.2-11 
+    3.3-22.7-2.9-26-13.9-3.3-11 2.9-22.7 
+    13.9-26 79.3-23.8 210.8-19.2 294.6 
+    30.1 10.1 6 13.4 19.1 7.4 29.2-6 10.1-19.1 
+    13.4-29.3 6.8z"/>
+  </svg>
+  <span>Last Played</span>
+</div>
 
             <h3 className="text-lg font-semibold">
-              Ishq - From "Lost;Found"
+              About You - From "The 1975"
             </h3>
 
             <p className="text-xs text-white/50 mt-2">
-              Faheem Abdullah • Album
+              The 1975 • Song
             </p>
 
-            <p className="text-xs text-green-400 mt-3">
+            <p className="text-s text-green-400 mt-3">
               ▶ Play on Spotify
             </p>
 

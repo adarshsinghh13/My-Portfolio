@@ -43,7 +43,7 @@ export default function HeroSection() {
 
           <span className="block">
             ideas and{" "}
-            <span className="font-serif italic bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 text-transparent bg-clip-text">
+            <span className="font-serif italic bg-gradient-to-r from-gray-600 via-gray-400 to-gray-700 text-transparent bg-clip-text">
               experiences
             </span>
           </span>

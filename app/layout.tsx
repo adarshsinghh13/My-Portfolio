@@ -43,9 +43,11 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
           rel="stylesheet"
         />
+        
       </head>
+      
 
-      <body className={`${dancing.variable} bg-black text-white`}>
+      <body className={`${inter.className} ${dancing.variable} bg-black text-white`}>
         <Providers> {/* 👈 WRAP EVERYTHING */}
           <Navbar />
           <TopLeft />

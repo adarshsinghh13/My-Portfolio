@@ -253,11 +253,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="md:col-span-2 h-[520px] relative rounded-2xl border border-white/10 overflow-hidden"
+            className="md:col-span-2 h-[520px] relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden"
           >
-            {/* BG */}
-            <div className="absolute inset-0 bg-black" />
-            <div className="absolute right-0 w-1/2 h-full bg-purple-600/10 blur-[120px]" />
+            {/* SOFT GLOW (same feel as left) */}
+<div className="absolute inset-0 rounded-2xl 
+  bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.05),transparent_60%)]" />
 
             {/* CONTENT */}
             <div className="relative z-10 p-12 flex flex-col h-full justify-start">
@@ -333,8 +333,12 @@ export default function Home() {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="md:col-span-1 h-[520px] bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col justify-between"
+            
+            className="md:col-span-1 h-[520px] bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col justify-between"
           >
+            {/* SOFT GLOW */}
+<div className="absolute inset-0 rounded-2xl 
+  bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.05),transparent_60%)]" />
             {/* TOP */}
             <div className="flex justify-between">
               <div className="w-8 h-8 border border-white/10 rounded-full flex items-center justify-center">
@@ -364,9 +368,27 @@ export default function Home() {
 
             {/* BUTTON */}
            <Link href="/book-call">
-  <button className="w-full py-4 bg-white text-black rounded-full">
-    CONNECT NOW ↗
-  </button>
+  <button className="
+w-full py-2.5 px-5   /* ⬅️ reduced height + width */
+rounded-full 
+relative overflow-hidden
+
+bg-gradient-to-r from-gray-700 via-gray-500 to-gray-800
+text-white text-sm font-semibold tracking-[0.12em]
+
+border border-white/10
+backdrop-blur-md
+
+transition-all duration-300
+
+hover:scale-[1.02]
+hover:shadow-[0_8px_20px_rgba(255,255,255,0.06)]
+hover:from-gray-600 hover:via-gray-400 hover:to-gray-700
+
+active:scale-[0.98]
+">
+  CONNECT NOW ↗
+</button>
 </Link>
           </motion.div>
 
@@ -375,24 +397,14 @@ export default function Home() {
 
 
 
-{/* ================= CLOCK SECTION ================= */}
-<div className="relative flex justify-center items-center -mt-40 -mb-40 z-20">
 
-  {/* GLOW BACKGROUND */}
-  <div className="absolute w-[500px] h-[500px] rounded-full 
-    bg-purple-700 opacity-10 blur-[120px]" />
-
-  {/* CLOCK */}
-  
-
-</div>
 
 
 {/* ================= BOTTOM CUT ================= */}
 <div className="" >
 
 </div>
-<div className="mt-69">
+<div className="">
 
     <Showcase />
     <SkillsSection />

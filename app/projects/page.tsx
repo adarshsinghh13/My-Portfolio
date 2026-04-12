@@ -9,7 +9,7 @@ export default function ProjectsPage() {
     <>
       <ProjectHero />
       <Projects />
-      <BehindSection/>
+      
       <HeroSection2/>
     </>
   );

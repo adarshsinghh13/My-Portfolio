@@ -2,28 +2,28 @@
 
 const testimonials = [
   {
-    name: "Arti Adhikari",
-    role: "Senior Software Engineer, Microsoft",
+    name: "Priya Verma",
+    role: "Senior Software Engineer",
     text: "WORKING WITH ADARSH HAS BEEN GENUINELY POSITIVE. HE BRINGS STRONG FRONTEND KNOWLEDGE AND A FRESH PERSPECTIVE.",
-    img: "/img1.jpg",
+    img: "/behind1.jpg",
   },
   {
-    name: "Ajay Singh Raghuwanshi",
+    name: "Ananya Sharma",
     role: "Technical Lead, Infosys",
     text: "ADARSH CONTRIBUTED SOLID IMPROVEMENTS WITH A STRUCTURED APPROACH AND CLEAR COMMUNICATION.",
-    img: "/img2.jpg",
+    img: "/behind2.jpg",
   },
   {
-    name: "Vivek Jadhav",
-    role: "Software Engineer, Google",
+    name: "Arjun Singh",
+    role: "Software Engineer",
     text: "RELIABLE FRONTEND DEVELOPER WITH CLEAN, SCALABLE, USER-FOCUSED CODE.",
-    img: "/img3.jpg",
+    img: "/behind3.jpg",
   },
   {
-    name: "Abhijeet Verma",
-    role: "Product Manager, Amazon",
+    name: "Aditya Mehta",
+    role: "Product Manager",
     text: "GREAT COLLABORATION AND EXECUTION. DELIVERS HIGH-QUALITY RESULTS CONSISTENTLY.",
-    img: "/img1.jpg",
+    img: "/behind4.jpg",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function Testimonials() {
 
         <h2 className="text-[40px] md:text-[64px] font-semibold">
           The Voices{" "}
-          <span className="font-serif italic bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 text-transparent bg-clip-text">
+          <span className="font-serif italic bg-gradient-to-r from-gray-600 via-gray-400 to-gray-700 text-transparent bg-clip-text">
             Behind
           </span>
         </h2>

@@ -40,7 +40,7 @@ export default function Hero() {
           
           <div className="flex items-center gap-4">
             <Image
-              src="/img1.jpg"
+              src="/profile3.jpg"
               alt="profile"
               width={56}
               height={56}
@@ -68,7 +68,7 @@ export default function Hero() {
 
   {/* LEFT */}
   <div className="max-w-sm">
-    <h2 className="font-[var(--font-dancing)] text-[44px] md:text-[52px] text-white leading-none">
+    <h2 className="text-[44px] md:text-[52px] text-white leading-none italic font-serif">
   ADARSH
 </h2>
     <p className="text-white/60 text-[15px] leading-[1.6] font-medium tracking-tight">
@@ -168,8 +168,8 @@ export default function Hero() {
 <div className="mt-10 mb-10 border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 -mx-6 md:-mx-16 lg:-mx-24 px-6 md:px-16 lg:px-24">
 
   {/* LEFT TEXT */}
-  <p className="text-white/40 text-sm tracking-tight">
-    © {new Date().getFullYear()} ADARSH. ALL RIGHTS RESERVED.
+  <p className="text-white/40 text-xs tracking-tight">
+    © {new Date().getFullYear()} ADARSH SINGH. ALL RIGHTS RESERVED.
   </p>
 
   {/* RIGHT ICONS */}

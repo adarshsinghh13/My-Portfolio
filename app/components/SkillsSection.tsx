@@ -145,11 +145,11 @@ export default function SkillsSection() {
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800;900&display=swap');
 
         .skill-gradient-text {
-          background: linear-gradient(130deg, #a78bff 0%, #e879f9 45%, #ff6b8a 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
+  background: linear-gradient(130deg, #6b7280 0%, #d1d5db 45%, #4b5563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
       `}</style>
 
       {/* ── Tall scroll container (drives all animations) ── */}
@@ -164,7 +164,7 @@ export default function SkillsSection() {
     top: 0,
     height: "100vh",
     overflow: "hidden",
-    background: "#050507",
+    background: "linear-gradient(to bottom, #0a0a0a, #111111, #0a0a0a)",
     borderRadius: "24px",
     margin: "",
   }}
