@@ -17,7 +17,7 @@ import HeroSection2 from "./components/HeroSection2";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import PageTransition from "./components/PageTransition";
-import { AnimatePresence} from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import PremiumCube from "./components/PremiumCube";
 
 
@@ -43,7 +43,7 @@ export default function Home() {
   }, []);
 
   return (
-  <>
+    <>
       <main className="relative min-h-screen bg-black text-white flex items-center justify-center px-6 overflow-hidden">
 
         {/* BACKGROUND GLOW */}
@@ -55,9 +55,9 @@ export default function Home() {
         <TopLeft />
 
         {/* NAVBAR */}
-<Navbar />
+        <Navbar />
 
-        
+
 
         {/* HERO CONTENT */}
         <div className="max-w-4xl text-center z-10">
@@ -107,7 +107,7 @@ export default function Home() {
             impactful user experiences.
           </motion.p>
 
-          
+
         </div>
 
         {/* BOTTOM LEFT */}
@@ -150,7 +150,7 @@ export default function Home() {
       {/* ================= BENTO + CLOCK ================= */}
       <div className="relative">
         {/* ================= BENTO SECTION ================= */}
-        <section className=" bg-black py-16 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <section className=" bg-black py-16 w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
 
           {/* LEFT CARD */}
           <motion.div
@@ -173,23 +173,23 @@ export default function Home() {
             </div>
 
             {/* CUBE */}
-<div className="flex justify-center items-center h-[220px] mt-2">
-  <PremiumCube 
-    containerSize={220}
-    
-  />
-</div>
+            <div className="flex justify-center items-center h-[220px] mt-2">
+              <PremiumCube
+                containerSize={220}
+
+              />
+            </div>
 
             {/* SOCIAL ICONS */}
             <div className="flex justify-center gap-6 text-gray-400">
 
               {/* LinkedIn */}
-              <a 
-    href="https://linkedin.com/in/adarshsinghh13" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-  >
+              <a
+                href="https://linkedin.com/in/adarshsinghh13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
                 <svg width="18" height="18" fill="currentColor">
                   <path d="M16 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h14c1.1 
         0 2-.9 2-2V2c0-1.1-.9-2-2-2zM5.3 13.5H2.7V6h2.6v7.5zM4 
@@ -202,12 +202,12 @@ export default function Home() {
               </a>
 
               {/* GitHub */}
-              <a 
-    href="https://github.com/adarshsinghh13" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-  >
+              <a
+                href="https://github.com/adarshsinghh13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
                 <svg width="18" height="18" fill="currentColor">
                   <path d="M9 0C4 0 0 4 0 9c0 4 2.6 7.4 6.2 
         8.6.5.1.7-.2.7-.5v-1.7c-2.5.5-3-1.2-3-1.2-.4-1-.9-1.3-.9-1.3-.8-.5 
@@ -224,12 +224,12 @@ export default function Home() {
               </a>
 
               {/* Twitter */}
-              <a 
-    href="https://twitter.com/adarshsinghh13" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-  >
+              <a
+                href="https://twitter.com/adarshsinghh13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
                 <svg width="18" height="18" fill="currentColor">
                   <path d="M18 3a7.5 7.5 0 0 1-2.1.6 3.7 3.7 
         0 0 0 1.6-2 7.4 7.4 0 0 1-2.3.9A3.7 
@@ -255,7 +255,7 @@ export default function Home() {
             className="md:col-span-2 h-[520px] relative rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden"
           >
             {/* SOFT GLOW (same feel as left) */}
-<div className="absolute inset-0 rounded-2xl 
+            <div className="absolute inset-0 rounded-2xl 
   bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.05),transparent_60%)]" />
 
             {/* CONTENT */}
@@ -288,40 +288,39 @@ export default function Home() {
                 <div className="text-right">
                   <div className="flex flex-wrap justify-end gap-1.5 mb-2">
                     {["Motion", "Type", "Feedback", "Craft"].map((t) => (
-  <span
-    key={t}
-    onClick={() => setActiveTab(t)}
-    className={`px-2 py-[2px] text-[10px] rounded-full border cursor-pointer transition ${
-      activeTab === t
-        ? "border-purple-500 text-purple-400"
-        : "border-white/10 text-gray-300 hover:border-white/30"
-    }`}
-  >
-    {t}
-  </span>
-))}
+                      <span
+                        key={t}
+                        onClick={() => setActiveTab(t)}
+                        className={`px-2 py-[2px] text-[10px] rounded-full border cursor-pointer transition ${activeTab === t
+                            ? "border-purple-500 text-purple-400"
+                            : "border-white/10 text-gray-300 hover:border-white/30"
+                          }`}
+                      >
+                        {t}
+                      </span>
+                    ))}
                   </div>
 
                   <p className="text-white text-xs font-medium">
-  {activeTab === "Motion" && "Micro-interactions"}
-  {activeTab === "Type" && "Typography"}
-  {activeTab === "Feedback" && "Responsiveness"}
-  {activeTab === "Craft" && "Attention to detail"}
-</p>
+                    {activeTab === "Motion" && "Micro-interactions"}
+                    {activeTab === "Type" && "Typography"}
+                    {activeTab === "Feedback" && "Responsiveness"}
+                    {activeTab === "Craft" && "Attention to detail"}
+                  </p>
 
-<p className="mt-3 text-gray-400 text-xs max-w-[260px] leading-relaxed">
-  {activeTab === "Motion" &&
-    "Subtle movement that confirms intent — never distracting."}
+                  <p className="mt-3 text-gray-400 text-xs max-w-[260px] leading-relaxed">
+                    {activeTab === "Motion" &&
+                      "Subtle movement that confirms intent — never distracting."}
 
-  {activeTab === "Type" &&
-    "Clean hierarchy and rhythm for effortless scanning."}
+                    {activeTab === "Type" &&
+                      "Clean hierarchy and rhythm for effortless scanning."}
 
-  {activeTab === "Feedback" &&
-    "Every hover, click, and focus gets a crisp response."}
+                    {activeTab === "Feedback" &&
+                      "Every hover, click, and focus gets a crisp response."}
 
-  {activeTab === "Craft" &&
-    "Polish lives in the edges: spacing, timing, and states."}
-</p>
+                    {activeTab === "Craft" &&
+                      "Polish lives in the edges: spacing, timing, and states."}
+                  </p>
                 </div>
               </div>
             </div>
@@ -332,11 +331,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            
+
             className="md:col-span-1 h-[520px] bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col justify-between"
           >
             {/* SOFT GLOW */}
-<div className="absolute inset-0 rounded-2xl 
+            <div className="absolute inset-0 rounded-2xl 
   bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.05),transparent_60%)]" />
             {/* TOP */}
             <div className="flex justify-between">
@@ -361,13 +360,13 @@ export default function Home() {
               </h2>
 
               <p className="mt-6 text-white font-medium">
-               
+
               </p>
             </div>
 
             {/* BUTTON */}
-           <Link href="/book-call">
-  <button className="
+            <Link href="/book-call">
+              <button className="
 w-full py-2.5 px-5   /* ⬅️ reduced height + width */
 rounded-full 
 relative overflow-hidden
@@ -386,37 +385,37 @@ hover:from-gray-600 hover:via-gray-400 hover:to-gray-700
 
 active:scale-[0.98]
 ">
-  CONNECT NOW ↗
-</button>
-</Link>
+                CONNECT NOW ↗
+              </button>
+            </Link>
           </motion.div>
 
         </section>
-       {/* ================= TOP CUT ================= */}
+        {/* ================= TOP CUT ================= */}
 
 
 
 
 
 
-{/* ================= BOTTOM CUT ================= */}
-<div className="" >
+        {/* ================= BOTTOM CUT ================= */}
+        <div className="" >
 
-</div>
-<div className="">
+        </div>
+        <div className="">
 
-    <Showcase />
-    <SkillsSection />
-    <Ticker />
-    <HeroSection />
-    <Testimonials />
-    <BehindSection />
-    <HeroSection2 />
+          <Showcase />
+          <SkillsSection />
+          <Ticker />
+          <HeroSection />
+          <Testimonials />
+          <BehindSection />
+          <HeroSection2 />
 
-</div>
+        </div>
 
 
       </div>
-</>
-);
+    </>
+  );
 }

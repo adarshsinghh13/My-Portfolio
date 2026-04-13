@@ -9,19 +9,6 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import dynamic from "next/dynamic";
-import { DM_Sans, Syne } from "next/font/google";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-dm-sans",
-});
-
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-syne",
-});
 
 // Dynamically import Scene to avoid SSR issues with WebGL
 const Scene = dynamic(() => import("./Scene"), {
@@ -96,9 +83,10 @@ const SkillBadge = memo(function SkillBadge({
         {icon}
       </span>
       <span
-        className={`text-sm font-medium ${dmSans.className}`}
+        className="text-sm font-medium"
         style={{
           color: hovered ? "rgba(255,255,255,0.9)" : "rgba(255,255,255,0.65)",
+          fontFamily: "'DM Sans', sans-serif",
           letterSpacing: "0.02em",
           transition: "color 0.25s",
         }}
@@ -152,8 +140,10 @@ export default function SkillsSection() {
 
   return (
     <>
-      {/* ── Local CSS ── */}
+      {/* ── Fonts + local CSS ── */}
       <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800;900&display=swap');
+
         .skill-gradient-text {
   background: linear-gradient(130deg, #6b7280 0%, #d1d5db 45%, #4b5563 100%);
   -webkit-background-clip: text;
@@ -225,24 +215,24 @@ export default function SkillsSection() {
               className="text-center"
             >
               <p
-                className={dmSans.className}
                 style={{
                   margin: "0 0 12px",
+                  fontFamily: "'DM Sans', sans-serif",
                   fontSize: "11px",
                   fontWeight: 500,
                   letterSpacing: "0.38em",
-                  textTransform: "uppercase" as const,
+                  textTransform: "uppercase",
                   color: "rgba(255,255,255,0.22)",
                 }}
               >
                 My Skillset
               </p>
               <h2
-                className={syne.className}
                 style={{
                   margin: 0,
+                  fontFamily: "'Syne', sans-serif",
                   fontSize: "clamp(44px, 7vw, 76px)",
-                  fontWeight: 800,
+                  fontWeight: 900,
                   lineHeight: 1.05,
                   letterSpacing: "-0.02em",
                 }}
