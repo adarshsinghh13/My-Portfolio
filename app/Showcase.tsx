@@ -99,8 +99,8 @@ function LeftPanel({ activeIndex }: { activeIndex: number }) {
             {project.title}
           </h3>
           {/* DESCRIPTION */}
-          <p className="text-gray-400 font-medium text-lg leading-7 max-w-xl mb-6">
-            🚀 {project.desc}
+          <p className="text-gray-400 text-lg leading-7 max-w-xl mb-6">
+            {project.desc}
           </p>
 
 
