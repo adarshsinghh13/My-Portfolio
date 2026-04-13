@@ -12,7 +12,7 @@
     "@calcom/embed-react": "^1.5.3",
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.7.7",
-    "@react-three/fiber": "^10.0.0-alpha.2",
+    "@react-three/fiber": "^9.6.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",
