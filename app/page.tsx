@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import TopLeft from "./components/TopLeft";
 import Clock from "./Clock";
 import Showcase from "./Showcase";
-import InteractiveGlobe from "./InteractiveGlobe";
 import SkillsSection from "./components/SkillsSection";
 import Ticker from "./components/Ticker";
 import HeroSection from "./components/HeroSection";
